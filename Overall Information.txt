@@ -209,7 +209,8 @@ Normal:
 - Giant Kritzkrieg Medic = sm_begkritzmed
 
 
-- Giant Sniper = sm_begsniper
+BROKEN - Giant Sniper = sm_begsniper - BROKEN
+Not included due to a server crash when turning to Giant Sniper while playing as the Heavy.
 
 
 
