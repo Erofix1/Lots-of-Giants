@@ -1,0 +1,311 @@
+All Robots:
+
+- Boss giants use ther own respective footsteps.
+- Normal giants use the common giant footsteps.
+- All giants can not be backstabbed.
+- All giants don't take fall damage.
+
+- All giants can't pick up health packs. 
+(Unless you are On Fire or you are Bleeding)
+
+- All giants can't be overhealed. 
+(If a Medic is healing while you turn into a giant, you will still be over healed, but as soon as he disconnects his healing beam, you will lose all overheal gained)
+
+- All giants have a basic killstreak applied to ther weapons.
+- All giants have 150% bonus max ammo and 10000% ammo regen.
+
+- All GateBot Giants have bonus capture rate of +3 and wear ther GateBot "Hat".
+
+\\\ Changes and Bugs:
+
+Bosses:
+
+- Chief Major League Scout:
+The BALL meter is invisible if you don't equip The Sandman beforehand.
+Bonus movement speed reduced to +30% from +700% due to sound of footsteps bugging. (He only get +30% bonus anyway due to TF2 having a limit on max movement speed)
+Added 200% Damage Bonus for The Sandman (To compensate his lack of insane movement speed he normally supposed to have)
+
+
+- Boss Major Crits:
+Size increased to 1.9 from 1.7	(Like any other Boss Giant)
+Now wears "Sergeant's Drill Hat"
+
+
+- Boss Major Crits (Type 2):
+Size increased to 1.9 from 1.75	(Like any other Boss Giant)
+
+
+- Chief Blast Soldier:
+Size increased to 1.9 from 1.8	(Like any other Boss Giant)
+Now wears "Dr's Dapper Topper"
+
+
+- Chief Blast Soldier (Type 2):
+Size increased to 1.9 from 1.8	(Like any other Boss Giant)
+Now wears "Dr's Dapper Topper" and "Exquisite Rack"
+
+
+- Sergeant Crits:
+None
+
+
+- Major Crits Atomic:
+None
+
+
+- Chief Concheror Soldier:
+The RAGE meter is invisible if you don't equip The Concheror beforehand.
+Now wears "Chieftain's Challenge"
+Spawns with full RAGE
+Bonus RAGE duration is increased from 800% to 9000%. (To compensate the RAGE meter being invisible)
+
+
+- Chief Pyro:
+Now wears "Pyromancer's Mask" and "Special Eyes".
+
+
+- Major Bomber:
+Size increased to 1.9 from 1.75	(Like any other Boss Giant)
+
+
+- Sir Nukesalot:
+Starts with 4 grenades in the clip when he normally has only 2.
+
+
+- Chief Tavish:
+Uses The Australium Eyelander
+Now wears "King of Scotland Cape" and "The Dark Age Defender".
+The HEAD count is invisible if you don't equip the Eyelander beforehand.
+
+
+- Giant Rapid Fire Demo Chief:
+Size increased to 1.9 from 1.75	(Like any other Boss Giant)
+Now wears "Reggaelator‎" and "Dangeresque, Too?!".
+
+
+- Chief Heal-on-Kill Deflector Heavy:
+Gives you "The Deflector" which makes your bullets Green
+Size increased to 1.9 from 1.8
+Now wears "Pocket Medic"
+Wears "Tough Guy's Toque" instead of "Tungsten Toque"
+
+
+- Captain Punch:
+None
+
+
+
+
+Normal:
+
+- Giant Scout:
+None
+
+
+- Super Scout:
+Bonus movement speed reduced to +30% from +100% due to sound of footsteps bugging. (He only get +30% bonus anyway due to TF2 having a limit on max movement speed).
+
+
+- Force-a-Nature Super Scout:
+None
+
+
+- Force-a-Nature Super Scout (Type 2): (He was very identical to Type 1 aside from being a GateBot and having shorter sight range. These changes should make him more unique)
+Turned 10% movement speed bonus into a penalty. (20% Slower than Type 1)
+Reduced bonus knockback power to 250% from 500%.
+
+
+- Giant Bonk Scout:
+The DRINK meter is invisible if you don't equip Bonk! Atomic Punch beforehand
+
+
+- Giant Jumping Sandman:
+The BALL meter is invisible if you don't equip The Sandman beforehand
+
+
+- Major League:
+The BALL meter is invisible if you don't equip The Sandman beforehand
+
+
+- Armored Sandman Scout:
+The BALL meter is invisible if you don't equip The Sandman beforehand
+Now wears "Courtly Cuirass" and "Squire's Sabatons"
+
+
+
+
+
+- Giant Soldier:
+None
+
+
+- Giant Rapid Fire Soldier:
+Reload Speed bonus deacreased from +180% to +90%. (To prevent Errors in the Server Console)
+Clip size increased from 4 to 100
+
+
+- Giant Burst Fire Soldier:
+Now wears "Soldier's Stash" and "Tin Pot"
+
+
+- Giant Burst Fire Soldier (Type 2):
+Now wears "Soldier's Stash" and "Exquisite Rack"
+
+
+- Giant Burst Fire Soldier (Type 3):
+Has 200% Damage Bonus
+(Normally this Giant's damage bonus would lower if all Gates at Mannhattan were Captured going from 200% to 100%)
+
+
+- Giant Burst Fire Soldier (Type 4):
+Has 100% Damage Bonus
+(Normally this Giant's damage bonus would lower if all Gates at Mannhattan were Captured going from 100% to 0%)
+
+
+- Giant Charged Soldier:
+None
+
+- Giant Buff Banner Soldier:
+Spawns with full RAGE
+The RAGE meter is invisible if you don't equip The Buff Banner beforehand.
+To compensate the bonus RAGE duration is increased from 800% to 9000%.
+
+- Giant Battalion's Backup Soldier:
+Spawns with full RAGE
+The RAGE meter is invisible if you don't equip The Battalion's Backup beforehand.
+To compensate the bonus RAGE duration is increased from 800% to 9000%.
+
+
+- Giant Concheror Soldier:
+(Spawns with full RAGE)
+The RAGE meter is invisible if you don't equip The Concheror beforehand.
+To compensate the bonus RAGE duration is increased from 800% to 9000%.
+
+
+- Giant Black Box Soldier:
+None
+
+
+- Giant Black Box Soldier (Type 2):
+Has 67% Damage Penalty.
+(Normally this Giant's damage penalty would increase if all Gates at Mannhattan were Captured going from 55% to 67%)
+
+
+- Giant Blast Soldier:
+None
+
+
+- Giant Blast Soldier (Type 2):
+None
+
+
+- Colonel Barrage:
+Now wears "Armored Authority"
+
+
+- Major Crits:
+None
+
+
+
+
+- Giant Pyro:
+None
+
+
+- Giant Airblast Pyro:
+None
+
+
+- Giant Flare Pyro:
+None
+
+
+- Giant Flare Pyro Type 2:
+None
+
+
+
+
+- Giant Demoman:
+Note: There is no Normal Giant Demoman. All Giant Robot Demos are by default Type 1 Rapid Fire.
+
+
+- Giant Rapid Fire Demoman :
+Reload Speed bonus deacreased from +180% to +90% (To prevent Errors in the Server Console)
+Clip size increased from 4 to 100
+Now wears "Sober Stuntman"
+
+
+- Giant Rapid Fire Demoman (Type 2):
+Now wears "Cyborg Stunt Helmet".
+
+
+- Giant Burst Fire Demoman:
+Now wears "Glengarry Bonnet"
+
+
+- Giant Demoknight:
+None
+
+
+
+
+- Giant Heavy:
+None
+
+
+- Giant Deflector Heavy:
+Gives you "The Deflector" which makes your bullets Green
+
+
+- Giant Heater Heavy:
+Added 40% Damage Bonus. (So he's not overshadowed by Type 2)
+
+
+- Giant Heater Heavy (Type 2):
+None
+
+
+- Giant Heal-on-Kill Deflector Heavy (Type 2):
+Gives you "The Deflector" which makes your bullets Green
+
+
+- Giant Heal-on-Kill Deflector Heavy (Type 3):
+Gives you "The Deflector" which makes your bullets Green
+
+
+- Giant Shotgun Heavy:
+None
+
+
+- Giant Natascha Heavy: (Changes were made to make him more unique, than just him being Giant Heavy with Natascha with no changes to stats)
+Damage Bonus decreased to 25% from 50% 
+
+
+- Giant Brass Beast Heavy: (Changes were made to make him more unique, than just him being Giant Heavy with Brass Beast with no changes to stats)
+Damage Bonus increased to 70% from 50%
+Movement Speed penalty while deployed decreased to 40% from 60%. (Doesn't slow in MvM for some reason...)
+
+
+- Super Heavyweight Champ:
+None
+
+
+- Giant Medic:
+Spawns with full UBERCHARGE
+Due to his insane heal rate, Overheal health doesn't update correctly and sometimes freezes at random amounts of Overheal.
+But It can't go over 150% of patient's health. 
+
+- Giant Medic (Type 2):
+Due to his insane heal rate, Overheal health doesn't update correctly and sometimes freezes at random amounts of Overheal.
+But It can't go over 150% of patient's health. 
+
+
+- Rapid Fire Bowman: (To make him more like the other Giants)
+Added 30% Airblast Resistance. (Same as Giant Scout)
+Added 30% Damage Force Reduction. (Same as Giant Scout)
+
+- Rapid Fire Bowman (Type 2): (To make him more like the other Giants)
+Added 30% Airblast Resistance. (Same as Giant Scout)
+Added 30% Damage Force Reduction. (Same as Giant Scout)

@@ -1,0 +1,67 @@
+\\\ Added:
+
+CUSTOM GIANTS !
+Ther stats are in "Custom Giant's Stats.txt" while ther commands are at the very bottom of the "Readme first, I'm very important.txt" file.
+
+Chief Buff Banner Soldier
+Chief Battalion's Backup Soldier
+
+Giant Air Strike Soldier
+Giant Tomislav Heavy
+Super Heavyweight Champ (Type 2)
+
+Giant Uber Medic
+Giant Kritzkrieg Medic
+
+Giant Hoovy
+Giant Observer
+
+
+
+\\\ Main Changes:
+
+All of the files now have ther own folder called "Lots of Giants" so they don't make a mess in "plugins" and "scripts".
+(so they don't make a mess in main plugins / scripts folders)
+
+
+\\\ Giant Changes:
+
+Bosses:
+
+No Changes
+
+
+Normal:
+
+- Giant Medic
+Removed Overheal penalty gained from The Quick-Fix
+
+- Giant Medic (Type 2)
+Removed Overheal penalty gained from The Quick-Fix
+
+- Giant Shotgun Heavy
+Now increases secondary ammo rather than primary
+
+- Giant Rapid Fire Soldier
+Clip size increased to 100 from 60
+
+- Giant Rapid Fire Demoman (Type 1)
+Clip size increased to 100 from 60
+
+
+\\\ Hats:
+
+No changes
+
+
+\\\ Removed:
+
+Nothing removed.
+
+
+\\\ Other:
+
+No Changes
+
+
+

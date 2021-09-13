@@ -1,0 +1,163 @@
+\\\ Description:
+These are my custom Giants that I made for fun.
+Before you start reading what they do please note that:
+
+- Commands for these Giants are in "Readme first, I'm very important.txt" file.
+
+- Every Giant, except for Giant Scouts, has a movement speed penalty of 50%.
+
+- Default amout of health for Giants:
+Giant Scout - 1600 HP
+Giant Soldier - 3800 HP
+Giant Pyro - 3000 HP
+Giant Demoman - 3300 HP
+Giant Heavy - 5000 HP
+Giant Medic - 4500 HP 
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\ Giant's Stats:
+
+\\\\\\\\\\\\\\\\\\\\ Bosses:
+
+\\\\\\\\\\ Chief Buff Banner Soldier:
+50000 HP
+Uses The Rocket Launcher and The Buff Banner
+Wears "The Tyrantium Helmet"
+50% Slower Movement speed
+
+Buff Banner:
++9000% Buff Duration
+
+
+
+\\\\\\\\\\ Chief Battalion's Backup Soldier
+50000 HP
+Uses The Rocket Launcher and The Battalion's Backup
+Wears "Grenadier's Softcap"
+50% slower movement speed
+
+Battalion's Backup:
++9000% Buff Duration
+
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\ Normal:
+
+\\\\\\\\\\ Giant Air Strike Soldier:
+3800 HP
+Uses The Air Strike and (an invisible) B.A.S.E. Jumper
+Wears "Jumper's Jeepcap"
+Sometimes the Air Strike's kill count won't show up on the HUD but the kill streak kit will show you your kill count.
+60% slower movement speed
+
+The Air Strike:
+-90% Blast damage from rocket jumps
++750% Self damage force
++2 clip size
+Increased attack speed and smaller blast radius while blast jumping
+Clip size increased on kill
++20% faster firing speed
+No base explosion radius penalty
+-25% damage penalty
+
+B.A.S.E. Jumper:
+I couldn't get the plugin to give the player The B.A.S.E. Jumper so 
+all attributes associated with that weapon are now on the player himself.
+(Or you can just say that the B.A.S.E. Jumper is invisible)
+
+
+
+
+
+\\\\\\\\\\ Giant Tomislav Heavy:
+5000 HP
+Uses The Tomislav
+
+Tomislav:
++20% Damage Bonus
+20% Faster spin up time
+50% More Accurate
+Super Silent Killer: No Giant Heavy Minigun Sounds
+20% slower firing speed
+
+
+
+\\\\\\\\\\ Super Heavyweight Champ (Type 2):
+5000 HP
+Uses pre-Jungle Inferno G.R.U.
+90% reduction in push force taken from damage (70% by default)
+90% airblast resistance (70% by default)
+
+G.R.U.:
++20% Damage Bonus
++30% faster move speed on wearer
+40% faster firing speed
+You are Marked-For-Death while active and for short period after switching weapons
+No base damage penalty
+
+
+
+
+\\\\\\\\\\ Giant Uber Medic:
+4500 HP
+Uses The Medigun
+
+Medigun:
+Spawns with full Ubercharge
++19900% Heal Rate
+
+
+\\\\\\\\\\ Giant Kritzkrieg Medic:
+4500 HP
+Uses The Kritzkrieg
+
+Kritzkrieg:
+Spawns with full Ubercharge
++19900% Heal Rate
++9999 Bonus Ubercharge Duration (It will last it's default duration on you but your patients will still get Crits)
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\ Joke Giants:
+Don't take them seriously, they are not build for battle.
+
+\\\\\\\\\\ Giant Hoovy:
+2500 HP (2500 Less HP than normal)
++50 Health regen
+No engine sounds
+Wears "Galvanized Gibus" and "Pyrovision Goggles"
+Uses Robo-Sandvish
+20% slower movement speed 
+
+Robo-Sandvish:
++99% increase in charge recharge rate
+
+
+
+\\\\\\\\\\ Giant Observer: 
+1000 HP
+No engine sounds
+No Giant Footsteps
+Wears: "Shutterbug" , "The Upgrade" and "Megapixel Beard"
+Uses Red-Tape Recorder and Cloak and Dagger
+25% Slower movement speed
+
+Cloak and Dagger:
++900% Cloak Regeneration rate
+Quiet unstealth
+
+
+
+
+
+
+
+
+
+
+
+
