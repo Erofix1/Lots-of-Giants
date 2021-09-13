@@ -1,0 +1,228 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/// Credits:
+
+Pelipoika - Made the original Be The Giant Deflector Heavy plugin.
+
+PC Gamer - Shared his "besamurai" and "bebeepman" plugins which allowed me to make Giants give weapons and hats to players, make a message appear in the chat when player turns into a giant.
+Recommended to remove unused stuff from the code and helped with giving Giants full RAGE or Ubercharge.
+
+Jaster - Released the "Extra Giants v4". Which was an inspiration and a Guide/Instructions in in making these Giant Robots.
+Some of his giants were used and changed.
+
+StormishJustice - Used his slightly modified version of Be The Giant Deflector Heavy .sp file which all these giants are made on.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Lots of Giants v2.2
+There are 67 Giants.
+
+/// Description:
+
+This pack makes ALL Giant Robots from Mann vs. Machine playable.
+Including Boss Giants and Unused Giants.
+
+As well as Custom Giants I made.
+Ther Commands are at the bottom of this file.
+
+
+/// VERY IMPORTANT:
+
+All Giants will give you a Weapon they use as well as the Hat they wear and after you stop being a giant you will lose those weapons and hats.
+
+Critboost gained from Giants is only removed upon death, class change or Giant Change.
+
+On non-MvM maps, Weapons that Giants drop will still have ther stats and anyone that picks them up will have it's stats.
+You can remove weapon drops by typing the following command into the server console:
+
+sm_cvar tf_dropped_weapon_lifetime 0
+
+
+Some Giant's stats were changed to make the more unique while some now wear hats so you can tell them apart from other Giants.
+For more information about these changes see the "Overall Changes.txt" file.
+It will also inform you about some minor bugs. 
+
+
+/// List of Giant Robots along with ther commands:
+
+Bosses:
+
+- Chief Major League Scout = sm_bechiefmlscout
+
+
+- Boss Major Crits = sm_bebossmajorcrits
+
+- Boss Major Crits (Type 2) = sm_bebossmajorcrits2
+
+- Chief Blast Soldier = sm_bechiefblastsol
+
+- Chief Blast Soldier (Type 2) = sm_bechiefblastsol2
+
+- Sergeant Crits = sm_sergcrits 
+
+- Major Crits Atomic = sm_benukesol
+
+- Chief Concheror Soldier = sm_chiefconchsol
+
+
+- Chief Pyro = sm_bechiefpyro
+
+
+- Major Bomber = sm_bemajorb
+
+- Sir Nukesalot = sm_benukede 
+
+- Chief Tavish = sm_bechieftavish
+
+- Giant Rapid Fire Demo Chief = sm_chiefrapidde
+
+
+- Chief Heal-on-Kill Deflector Heavy = sm_bechokdh
+
+- Captain Punch = sm_capp
+
+
+Normal:
+
+- Giant Scout = sm_begscout
+
+- Super Scout = sm_besupers
+
+- Force-a-Nature Super Scout = sm_befansupers
+
+- Force-a-Nature Super Scout (Type 2) = sm_befansupers2
+
+- Giant Bonk Scout = sm_begbonkscout
+
+- Giant Jumping Sandman = sm_begjumpsandman
+
+- Major League = sm_bemlscout
+
+- Armored Sandman Scout = sm_bearmoredsandman
+
+
+- Giant Soldier = sm_begsol
+
+- Giant Rapid Fire Soldier = sm_berapidsol
+
+- Giant Burst Fire Soldier = sm_begburstsol
+
+- Giant Burst Fire Soldier (Type 2) = sm_begburstsol2
+
+- Giant Burst Fire Soldier (Type 3) = sm_begburstsol3
+
+- Giant Burst Fire Soldier (Type 4) = sm_begburstsol4
+
+- Giant Charged Soldier = sm_bechargedsol
+
+- Giant Buff Banner Soldier = sm_begbuffsol
+
+- Giant Battalion's Backup Soldier = sm_begbackupsol
+
+- Giant Concheror Soldier = sm_begconchsol
+
+- Giant Black Box Soldier = sm_begblackboxsol
+
+- Giant Black Box Soldier (Type 2) = sm_begblackboxsol2
+
+- Giant Blast Soldier = sm_begblastsol
+
+- Giant Blast Soldier (Type 2) = sm_begblastsol2
+
+- Colonel Barrage = sm_colbar
+
+- Major Crits = sm_majorcrits
+
+
+- Giant Pyro = sm_begpyro
+
+- Giant Airblast Pyro = sm_beairblastpyro
+
+- Giant Flare Pyro = sm_beflarepyro
+
+- Giant Flare Pyro (Type 2) = sm_beflarepyro2
+
+
+- Giant Demoman = sm_begde
+
+- Giant Rapid Fire Demoman = sm_berapidde
+
+- Giant Rapid Fire Demoman (Type 2) = sm_berapidde2
+
+- Giant Burst Fire Demoman = sm_begburstde
+
+- Giant Demoknight = sm_begdeknight
+
+
+- Giant Heavy = sm_begheavy
+
+- Giant Deflector Heavy = sm_begdeflectorh
+
+- Giant Heater Heavy = sm_begheaterheavy
+
+- Giant Heater Heavy (Type 2) = sm_begheaterheavy2
+
+- Giant Heal-on-Kill Deflector Heavy (Type 2) = sm_beghokdh2
+
+- Giant Heal-on-Kill Deflector Heavy (Type 3) = sm_beghokdh3
+
+- Giant Shotgun Heavy = sm_begshotgunh
+
+- Giant Natascha Heavy = sm_begnatheavy
+
+- Giant Brass Beast Heavy = sm_begbbheavy
+
+- Super Heavyweight Champ = sm_beshwc
+
+
+- Giant Medic = sm_begmed
+
+- Giant Medic (Type 2) = sm_begmed2
+
+
+- Rapid Fire Bowman = sm_berapidbowman
+
+- Rapid Fire Bowman (Type 2) = sm_berapidbowman2
+
+
+\\\ Custom:
+
+Bosses:
+
+- Chief Buff Banner Soldier = sm_bechiefbuffsol
+
+- Chief Battalion's Backup Soldier = sm_bechiefbackupsol
+
+
+
+Normal:
+
+- Giant Air Strike Soldier = sm_begstrikesol
+
+- Giant Tomislav Heavy = sm_begtomiheavy
+
+- Super Heavyweight Champ (Type 2) = sm_beshwc2
+
+
+- Giant Uber Medic = sm_begubermed
+
+- Giant Kritzkrieg Medic = sm_begkritzmed
+
+
+- Giant Sniper = sm_begsniper
+
+
+
+Joke:
+
+- Giant Hoovy = sm_beghoovy
+
+- Giant Observer = sm_begobserver
+
+
+
+
+
+
+
+
