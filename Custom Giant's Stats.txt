@@ -2,7 +2,7 @@
 These are my custom Giants that I made for fun.
 Before you start reading what they do please note that:
 
-- Commands for these Giants are in "Readme first, I'm very important.txt" file.
+- Commands for these Giants are in "Overall Information.txt" or "Readme first, I'm very important.txt" file.
 
 - Every Giant, except for Giant Scouts, has a movement speed penalty of 50%.
 
