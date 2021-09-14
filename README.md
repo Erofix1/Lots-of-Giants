@@ -21,6 +21,9 @@ These are the things I want to add in the future. I'm not a coding expert so I d
 - Add a command that allows to change required flag while server is running to allow others to use the command.
 (Idk if this is already a thing but it will make my job easier by just updating one type of version).
 
-- DONE - Make giants take fixed backstab damage. - CODE MADE BY HIGPS 
+## DONE 
+
+# HiGPS
+- Make giants take fixed backstab damage. 
 (Normal Giants will take 500). 
 (Bosses take 5000 damage).
