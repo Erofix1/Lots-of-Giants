@@ -18,6 +18,9 @@ These are the things I want to add in the future. I'm not a coding expert so I d
 
 - Solve a problem where sometimes HUD elements like Soldier's Banner Charge Bar or Sandman ball re-charge bar not showing.
 
-- Make giants take fixed backstab damage. 
+- Add a command that allows to change required flag while server is running to allow others to use the command.
+(Idk if this is already a thing but it will make my job easier by just updating one type of version).
+
+- DONE - Make giants take fixed backstab damage. - CODE MADE BY HIGPS 
 (Normal Giants will take 500). 
 (Bosses take 5000 damage).
