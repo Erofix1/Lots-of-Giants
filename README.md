@@ -9,6 +9,10 @@
 
 These are the things I want to add in the future. I'm not a coding expert so I don't know how to add these things:
 
+- Make all Giant robots have robotic bits fly out when damaged instead of blood.
+
+- Make all Giants robots gib when killed instead of turning into a ragdoll.
+
 - A second spawn sound along side the main one for bosses. 
 (The second sound only plays for players who are the boss with that unique spawn sound).
 
