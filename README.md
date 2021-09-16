@@ -25,7 +25,7 @@ These are the things I want to add in the future. I'm not a coding expert so I d
 - Add a command that allows to change required flag while server is running to allow others to use the command.
 (Idk if this is already a thing but it will make my job easier by just updating one type of version).
 
-## DONE 
+## Done
 
 # HiGPS
 - Make giants take fixed backstab damage. 
