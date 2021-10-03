@@ -9,7 +9,7 @@
 
 These are the things I want to add in the future. I'm not a coding expert so I don't know how to add these things:
 
-- Make a Admin like Menu that allows admin to easily turn players into Robots.
+- Make a Admin like Menu that allows admins to easily turn players into Robots.
 
 - Make all Giant robots have robotic bits fly out when damaged instead of blood.
 
