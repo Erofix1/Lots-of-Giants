@@ -13,7 +13,7 @@
 public Plugin:myinfo =
 {
 	name = "[TF2] Be the Super Scout",
-	author = "Erofix using the code from: Pelipoika, PC Gamer, Jaster and StormishJustice",
+	author = "Erofix using the code from: HiGPS and his Friends, Pelipoika, PC Gamer, Jaster and StormishJustice",
 	description = "Play as the Super Scout from MvM",
 	version = PLUGIN_VERSION,
 	url = "www.sourcemod.com"
@@ -177,8 +177,8 @@ public Action:Command_SuperScout(client, args)
 		MakeSuperScout(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Super Scout !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Super Scout !");
-		PrintToChat(target_list[i], "2. Melee only but you're Super fast !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Melee only and you're Super fast.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

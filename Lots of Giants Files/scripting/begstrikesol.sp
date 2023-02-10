@@ -177,10 +177,10 @@ public Action:Command_GiantAirStrikeSol(client, args)
 		MakeGiantAirStrikeSol(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Air Strike Soldier !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Air Strike Soldier !");
-		PrintToChat(target_list[i], "2. Your Air Strike is slightly improved !");
-		PrintToChat(target_list[i], "3. Comes equiped with an invisible B.A.S.E. Jumper !");
-		PrintToChat(target_list[i], "4. Can rocket jump unlike the other Giant Soldiers !");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Air Strike is improved.");
+		PrintToChat(target_list[i], "3. Comes equiped with an invisible B.A.S.E. Jumper.");
+		PrintToChat(target_list[i], "4. Can rocket jump unlike the other Giant Soldiers.");
+		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

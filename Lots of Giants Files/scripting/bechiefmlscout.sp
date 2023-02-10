@@ -177,10 +177,8 @@ public Action:Command_ChiefMajorLeagueScout(client, args)
 		MakeChiefMajorLeagueScout(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Chief Major League Scout !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Chief Major League Scout !");
-		PrintToChat(target_list[i], "2. You're fast and have lots of Health !");
-		PrintToChat(target_list[i], "3. Your Sandman deals 200 percent more damage and can fire an infinite amount of baseballs !");
-		PrintToChat(target_list[i], "4. But you're very vulnerable to Airblast.");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Chief Type has more health, movement speed and base Sandman damage but it's much more vulnerable to airblast.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

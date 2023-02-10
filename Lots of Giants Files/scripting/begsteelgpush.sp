@@ -5,35 +5,30 @@
  
 #define PLUGIN_VERSION "1.0"
  
-#define BMAJORCRITS2       "models/bots/soldier_boss/bot_soldier_boss.mdl"
+#define GSTEELGPUSH             "models/bots/heavy_boss/bot_heavy_boss.mdl"
 #define SPAWN   "#mvm/giant_heavy/giant_heavy_entrance.wav"
 #define DEATH   "mvm/sentrybuster/mvm_sentrybuster_explode.wav"
-#define LOOP    "mvm/giant_soldier/giant_soldier_loop.wav"
+#define LOOP    "mvm/giant_heavy/giant_heavy_loop.wav"
 
-#define LEFTFOOT        ")mvm/giant_soldier/giant_soldier_step01.wav"
-#define LEFTFOOT1       ")mvm/giant_soldier/giant_soldier_step03.wav"
-#define RIGHTFOOT       ")mvm/giant_soldier/giant_soldier_step02.wav"
-#define RIGHTFOOT1      ")mvm/giant_soldier/giant_soldier_step04.wav"
- 
 public Plugin:myinfo =
 {
-	name = "[TF2] Be the Boss Major Crits (Type 2)",
-	author = "Erofix using the code from: Pelipoika, PC Gamer, Jaster and StormishJustice",
-	description = "Play as the Unused Boss Major Crits (Type 2) from MvM",
+	name = "[TF2] Be the Giant Steel Gauntlet Pusher",
+	author = "Erofix using the code and getting help from: HiGPS and his Friends, Pelipoika, PC Gamer, Jaster and StormishJustice",
+	description = "Play as the Custom Giant Steel Gauntlet Pusher from MvM",
 	version = PLUGIN_VERSION,
 	url = "www.sourcemod.com"
 }
 
 new Handle:g_hEquipWearable;
-new bool:g_bIsBMAJORCRITS2[MAXPLAYERS + 1];
+new bool:g_bIsGSTEELGPUSH[MAXPLAYERS + 1];
  
 public OnPluginStart()
 {
 	LoadTranslations("common.phrases");
-	CreateConVar("bebossmajorcrits2_version", PLUGIN_VERSION, "[TF2] Be the Boss Major Crits (Type 2) version", FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_PLUGIN|FCVAR_SPONLY);
+	CreateConVar("begsteelgpush_version", PLUGIN_VERSION, "[TF2] Be the Giant Steel Gauntlet Pusher version", FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_PLUGIN|FCVAR_SPONLY);
    
-	RegAdminCmd("sm_bebossmajorcrits2", Command_BossMajorCrits2, ADMFLAG_ROOT, "It's a good time to run");
-	AddNormalSoundHook(BossMajorCrits2SH);
+	RegAdminCmd("sm_begsteelgpush", Command_GiantSteelGauntletPusher, ADMFLAG_ROOT, "It's a good time to run");
+	AddNormalSoundHook(GiantSteelGauntletPusherSH);
    
 	HookEvent("post_inventory_application", EventInventoryApplication, EventHookMode_Post);
 	HookEvent("player_death", Event_Death, EventHookMode_Post);
@@ -56,43 +51,48 @@ public OnPluginStart()
  
 public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
 {
-//	CreateNative("BeBossMajorCrits2_MakeBossMajorCrits2", Native_SetBossMajorCrits2);
-//	CreateNative("BeBossMajorCrits2_IsBossMajorCrits2", Native_IsBossMajorCrits2);
+//	CreateNative("BeGiantSteelGauntletPusher_MakeGiantSteelGauntletPusher", Native_SetGiantSteelGauntletPusher);
+//	CreateNative("BeGiantSteelGauntletPusher_IsGiantSteelGauntletPusher", Native_IsGiantSteelGauntletPusher);
 	return APLRes_Success;
 }
  
 public OnClientPutInServer(client)
 {
-	OnClientDisconnect_Post(client);
+    OnClientDisconnect_Post(client);
 }
  
 public OnClientDisconnect_Post(client)
 {
-	if (g_bIsBMAJORCRITS2[client])
+	if (g_bIsGSTEELGPUSH[client])
 	{
 		StopSound(client, SNDCHAN_AUTO, LOOP);
-		g_bIsBMAJORCRITS2[client] = false;
+		g_bIsGSTEELGPUSH[client] = false;
 	}
 }
  
 public OnMapStart()
 {
-	PrecacheModel(BMAJORCRITS2);
+	PrecacheModel(GSTEELGPUSH);
 	PrecacheSound(SPAWN);
 	PrecacheSound(DEATH);
 	PrecacheSound(LOOP);
-   	
-	PrecacheSound("mvm/giant_soldier/giant_soldier_step01.wav");
-	PrecacheSound("mvm/giant_soldier/giant_soldier_step03.wav");
-	PrecacheSound("mvm/giant_soldier/giant_soldier_step02.wav");
-	PrecacheSound("mvm/giant_soldier/giant_soldier_step04.wav");
+	
+	PrecacheSound("^mvm/giant_common/giant_common_step_01.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_02.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_03.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_04.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_05.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_06.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_07.wav");
+	PrecacheSound("^mvm/giant_common/giant_common_step_08.wav");
+   
    
 }
  
 public EventInventoryApplication(Handle:event, const String:name[], bool:dontBroadcast)
 {
 	new client = GetClientOfUserId(GetEventInt(event, "userid"));
-	if(g_bIsBMAJORCRITS2[client])
+	if(g_bIsGSTEELGPUSH[client])
 	{
 		RemoveModel(client);
 	   
@@ -102,7 +102,7 @@ public EventInventoryApplication(Handle:event, const String:name[], bool:dontBro
 		AcceptEntityInput(client, "SetForcedTauntCam");
 		TF2Attrib_RemoveAll(client);
 			   
-		g_bIsBMAJORCRITS2[client] = false;
+		g_bIsGSTEELGPUSH[client] = false;
 	}
 }
  
@@ -112,7 +112,7 @@ public Event_Death(Handle:event, const String:name[], bool:dontBroadcast)
 	new deathflags = GetEventInt(event, "death_flags");
 	if (!(deathflags & TF_DEATHFLAG_DEADRINGER))
 	{
-		if (IsValidClient(client) && g_bIsBMAJORCRITS2[client])
+		if (IsValidClient(client) && g_bIsGSTEELGPUSH[client])
 		{
 			StopSound(client, SNDCHAN_AUTO, LOOP);
 		   
@@ -137,6 +137,7 @@ public Action:RemoveModel(client)
 {
 	if (IsValidClient(client))
 	{
+	   
 		TF2Attrib_RemoveAll(client);
 		SetEntPropFloat(client, Prop_Send, "m_flModelScale", 1.0);
 		SetEntProp(client, Prop_Send, "m_bIsMiniBoss", _:false);
@@ -147,7 +148,7 @@ public Action:RemoveModel(client)
 	}
 }
  
-public Action:Command_BossMajorCrits2(client, args)
+public Action:Command_GiantSteelGauntletPusher(client, args)
 {
 	decl String:arg1[32];
 	if (args < 1)
@@ -174,20 +175,19 @@ public Action:Command_BossMajorCrits2(client, args)
 	}
 	for (new i = 0; i < target_count; i++)
 	{
-		MakeBossMajorCrits2(target_list[i]);
-		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Boss Major Crits (Type 2) !", client, target_list[i]);
-		PrintToChat(target_list[i], "1. You are now Boss Major Crits (Type 2) !");
-		PrintToChat(target_list[i], "2. Unleash a Barrage of crit boosted rockets.");
-		PrintToChat(target_list[i], "3. More health than Type 1.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");			
+		MakeGiantSteelGauntletPusher(target_list[i]);
+		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Steel Gauntlet Pusher !", client, target_list[i]);
+		PrintToChat(target_list[i], "1. You are now Giant Steel Gauntlet Pusher !");
+		PrintToChat(target_list[i], "2. Pusher deals even more damage and knockbacks enemies.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;
 }
  
-MakeBossMajorCrits2(client)
+MakeGiantSteelGauntletPusher(client)
 {
-	TF2_SetPlayerClass(client, TFClass_Soldier);
+	TF2_SetPlayerClass(client, TFClass_Heavy);
 	TF2_RegeneratePlayer(client);
 	EmitSoundToAll(LOOP, client);
 
@@ -195,37 +195,33 @@ MakeBossMajorCrits2(client)
 	if (ragdoll > MaxClients && IsValidEntity(ragdoll)) AcceptEntityInput(ragdoll, "Kill");
 	decl String:weaponname[32];
 	GetClientWeapon(client, weaponname, sizeof(weaponname));
-	if (strcmp(weaponname, "tf_weapon_", false) == 0)
+	if (strcmp(weaponname, "tf_weapon_", false) == 2)
 	{
-		SetEntProp(GetPlayerWeaponSlot(client, 0), Prop_Send, "m_iWeaponState", 0);
+		SetEntProp(GetPlayerWeaponSlot(client, 2), Prop_Send, "m_iWeaponState", 2);
 		TF2_RemoveCondition(client, TFCond_Slowed);
 	}
 	CreateTimer(0.0, Timer_Switch, client);
-	SetModel(client, BMAJORCRITS2);
-	
-	TF2_SetHealth(client, 60000);
+	SetModel(client, GSTEELGPUSH);
    
-	SetEntPropFloat(client, Prop_Send, "m_flModelScale", 1.9);
+	TF2_SetHealth(client, 7000);
+   
+	SetEntPropFloat(client, Prop_Send, "m_flModelScale", 1.75);
 	SetEntProp(client, Prop_Send, "m_bIsMiniBoss", _:true);
 	TF2Attrib_SetByName(client, "move speed penalty", 0.5);
-	TF2Attrib_SetByName(client, "health regen", 250.0);
-	TF2Attrib_SetByName(client, "damage force reduction", 0.4);
-	TF2Attrib_SetByName(client, "airblast vulnerability multiplier", 0.4);
-	TF2Attrib_SetByName(client, "airblast vertical vulnerability multiplier", 0.1);
+	TF2Attrib_SetByName(client, "damage force reduction", 0.3);
+	TF2Attrib_SetByName(client, "airblast vulnerability multiplier", 0.3);
 	TF2Attrib_SetByName(client, "health from packs decreased", 0.0);
-	TF2Attrib_SetByName(client, "max health additive bonus", 59800.0);
+	TF2Attrib_SetByName(client, "max health additive bonus", 6700.0);
 	TF2Attrib_SetByName(client, "cannot be backstabbed", 1.0);
-	TF2Attrib_SetByName(client, "ammo regen", 100.0);
 	TF2Attrib_SetByName(client, "cancel falling damage", 1.0);
-	TF2Attrib_SetByName(client, "rage giving scale", 0.1);
 	TF2Attrib_SetByName(client, "patient overheal penalty", 0.0);
 	TF2Attrib_SetByName(client, "mult_patient_overheal_penalty_active", 0.0);
-	UpdatePlayerHitbox(client, 1.9);
-   
+	TF2Attrib_SetByName(client, "override footstep sound set", 2.0);
+	UpdatePlayerHitbox(client, 1.75);
+	
+	TF2_RemoveCondition(client, TFCond_CritOnFirstBlood);
 	TF2_AddCondition(client, TFCond_SpeedBuffAlly, 0.1);
-	TF2_AddCondition(client, TFCond_CritOnFirstBlood, -1.0);
-	g_bIsBMAJORCRITS2[client] = true;
-
+	g_bIsGSTEELGPUSH[client] = true;
 }
  
 stock UpdatePlayerHitbox(const client, const Float:fScale)
@@ -253,37 +249,34 @@ stock TF2_SetHealth(client, NewHealth)
 public Action:Timer_Switch(Handle:timer, any:client)
 {
 	if (IsValidClient(client))
-			GiveBossMajorCrits2(client);
+			GiveGiantSteelGauntletPusher(client);
 }
  
-stock GiveBossMajorCrits2(client)
+stock GiveGiantSteelGauntletPusher(client)
 {
 	if (IsValidClient(client))
 	{
-		g_bIsBMAJORCRITS2[client] = true;
+		g_bIsGSTEELGPUSH[client] = true;
 		
 		TF2_RemoveAllWearables(client);
 
 		TF2_RemoveWeaponSlot(client, 0);
-		CreateWeapon(client, "tf_weapon_rocketlauncher", 18, 6, 1, 2, 0);
 		TF2_RemoveWeaponSlot(client, 1);
 		TF2_RemoveWeaponSlot(client, 2);
+		CreateWeapon(client, "tf_weapon_fists", 331, 6, 1, 2, 0);
 		
-		CreateHat(client, 30026, 10, 6);
+		CreateHat(client, 989, 10, 6);
 
-		int Weapon1 = GetPlayerWeaponSlot(client, TFWeaponSlot_Primary);
-		if(IsValidEntity(Weapon1))
+		
+		int Weapon3 = GetPlayerWeaponSlot(client, TFWeaponSlot_Melee);
+		if(IsValidEntity(Weapon3))
 		{
-			TF2Attrib_RemoveAll(Weapon1);
-			
-			TF2Attrib_SetByName(Weapon1, "damage bonus", 1.5);
-			TF2Attrib_SetByName(Weapon1, "fire rate bonus", 0.2);
-			TF2Attrib_SetByName(Weapon1, "faster reload rate", 0.4);
-			TF2Attrib_SetByName(Weapon1, "clip size upgrade atomic", 26.0);
-			TF2Attrib_SetByName(Weapon1, "projectile spread angle penalty", 5.0);
-			TF2Attrib_SetByName(Weapon1, "projectile speed decreased", 0.4);
-			TF2Attrib_SetByName(Weapon1, "maxammo primary increased", 2.5);
-			TF2Attrib_SetByName(Weapon1, "killstreak tier", 1.0);
+			TF2Attrib_RemoveAll(Weapon3);
+				
+			TF2Attrib_SetByName(Weapon3, "fire rate penalty", 1.6);
+			TF2Attrib_SetByName(Weapon3, "damage causes airblast", 1.0);
+			TF2Attrib_SetByName(Weapon3, "damage bonus", 2.0);
+			TF2Attrib_SetByName(Weapon3, "killstreak tier", 1.0);
 			
 		}
 	}
@@ -294,50 +287,22 @@ public player_inv(Handle event, const char[] name, bool dontBroadcast)
 	int userd = GetEventInt(event, "userid");
 	int client = GetClientOfUserId(userd);
 	
-	if (g_bIsBMAJORCRITS2[client] && IsValidClient(client))
+	if (g_bIsGSTEELGPUSH[client] && IsValidClient(client))
 	{
 		TF2_RemoveAllWearables(client);
-		int Weapon1 = GetPlayerWeaponSlot(client, TFWeaponSlot_Primary);
-		TF2Attrib_RemoveByName(Weapon1, "damage bonus");
-		TF2Attrib_RemoveByName(Weapon1, "fire rate bonus");
-		TF2Attrib_RemoveByName(Weapon1, "faster reload rate");
-		TF2Attrib_RemoveByName(Weapon1, "clip size upgrade atomic");
-		TF2Attrib_RemoveByName(Weapon1, "projectile spread angle penalty");
-		TF2Attrib_RemoveByName(Weapon1, "projectile speed decreased");
-		TF2Attrib_RemoveByName(Weapon1, "maxammo primary increased");
-		TF2Attrib_RemoveByName(Weapon1, "killstreak tier");		
+		int Weapon3 = GetPlayerWeaponSlot(client, TFWeaponSlot_Melee);
+		
+		TF2Attrib_RemoveByName(Weapon3, "fire rate penalty");
+		TF2Attrib_RemoveByName(Weapon3, "damage causes airblast");
+		TF2Attrib_RemoveByName(Weapon3, "damage bonus");
+		TF2Attrib_RemoveByName(Weapon3, "killstreak tier");
 	}
 }
  
-public Action:BossMajorCrits2SH(clients[64], &numClients, String:sample[PLATFORM_MAX_PATH], &entity, &channel, &Float:volume, &level, &pitch, &flags)
+public Action:GiantSteelGauntletPusherSH(clients[64], &numClients, String:sample[PLATFORM_MAX_PATH], &entity, &channel, &Float:volume, &level, &pitch, &flags)
 {
 	if (!IsValidClient(entity)) return Plugin_Continue;
-	if (!g_bIsBMAJORCRITS2[entity]) return Plugin_Continue;
-
-	if (strncmp(sample, "player/footsteps/", 17, false) == 0)
-	{
-		if (StrContains(sample, "1.wav", false) != -1)
-		{
-			Format(sample, sizeof(sample), "mvm/giant_soldier/giant_soldier_step01.wav");
-			EmitSoundToAll(sample, entity);
-		}
-		else if (StrContains(sample, "3.wav", false) != -1)
-		{
-			Format(sample, sizeof(sample), "mvm/giant_soldier/giant_soldier_step03.wav");
-			EmitSoundToAll(sample, entity);
-		}
-		else if (StrContains(sample, "2.wav", false) != -1)
-		{
-			Format(sample, sizeof(sample), "mvm/giant_soldier/giant_soldier_step02.wav");
-			EmitSoundToAll(sample, entity);
-		}
-		else if (StrContains(sample, "4.wav", false) != -1)
-		{
-			Format(sample, sizeof(sample), "mvm/giant_soldier/giant_soldier_step04.wav");
-			EmitSoundToAll(sample, entity);
-		}
-		return Plugin_Changed;
-	}
+	if (!g_bIsGSTEELGPUSH[entity]) return Plugin_Continue;
 
 	if (volume == 0.0 || volume == 0.9997) return Plugin_Continue;
 	if (!IsValidClient(entity)) return Plugin_Continue;
@@ -375,17 +340,16 @@ stock TF2_GetNameOfClass(TFClassType:class, String:name[], maxlen)
 	}
 }
  /*
-public Native_SetBossMajorCrits2(Handle:plugin, args)
-        MakeBossMajorCrits2(GetNativeCell(1));
+public Native_SetGiantSteelGauntletPusher(Handle:plugin, args)
+        MakeGiantSteelGauntletPusher(GetNativeCell(1));
  
-public Native_IsBossMajorCrits2(Handle:plugin, args)
-        return g_bIsBMAJORCRITS2[GetNativeCell(1)];*/
+public Native_IsGiantSteelGauntletPusher(Handle:plugin, args)
+        return g_bIsGSTEELGPUSH[GetNativeCell(1)];*/
        
 stock bool:IsValidClient(client)
 {
 	if (client <= 0) return false;
 	if (client > MaxClients) return false;
-	if (client <= 0 || client > MaxClients) return false;
 	return IsClientInGame(client);
 }
 

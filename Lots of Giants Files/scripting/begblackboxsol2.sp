@@ -177,9 +177,8 @@ public Action:Command_GiantBlackBoxSol2(client, args)
 		MakeGiantBlackBoxSol2(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Black Box Soldier (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Black Box Soldier (Type 2) !");
-		PrintToChat(target_list[i], "2. Your Black Box gives you lots of health when you deal damage !");
-		PrintToChat(target_list[i], "3. Type 2 is a GateBot but deals less damage.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Type 2 is a GateBot but deals less damage.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

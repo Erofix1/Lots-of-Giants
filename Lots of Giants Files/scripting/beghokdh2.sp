@@ -204,10 +204,8 @@ public Action:Command_Ghokdh2(client, args)
 		MakeGhokdh2(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Heal-on-Kill Deflector Heavy (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Heal-on-Kill Deflector Heavy (Type 2) !");
-		PrintToChat(target_list[i], "2. Your Minigun deals 20 percent more damage and can destroy Rockets and Pipes !");
-		PrintToChat(target_list[i], "3. Killing enemies restores 5000 health !");
-		PrintToChat(target_list[i], "4. Less health than Chief Type.");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Type 2 has less max. health and less healing received from killing enemies.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

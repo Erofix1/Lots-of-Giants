@@ -177,9 +177,8 @@ public Action:Command_GShotgunH(client, args)
 		MakeGShotgunH(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Shotgun Heavy !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Shotgun Heavy !");
-		PrintToChat(target_list[i], "2. Your Shotgun can 1-shot almost anything at close range !");
-		PrintToChat(target_list[i], "3. But you fire slower and you're weaker at longer ranges.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Shotgun can 1-shot almost anything at close range but fires slower and it's much weaker at longer range.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

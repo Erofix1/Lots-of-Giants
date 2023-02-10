@@ -30,10 +30,10 @@ public OnPluginStart()
 	RegAdminCmd("sm_bearmoredsandman", Command_ArmoredSandmanScout, ADMFLAG_ROOT, "It's a good time to run");
 
 	AddNormalSoundHook(ArmoredSandmanScoutSH);
-   
+	
 	HookEvent("post_inventory_application", EventInventoryApplication, EventHookMode_Post);
 	HookEvent("player_death", Event_Death, EventHookMode_Post);
-
+	
 	GameData hTF2 = new GameData("sm-tf2.games"); // sourcemod's tf2 gamdata
 
 	if (!hTF2)
@@ -177,9 +177,9 @@ public Action:Command_ArmoredSandmanScout(client, args)
 		MakeArmoredSandmanScout(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Armored Sandman Scout !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Armored Sandman Scout !");
-		PrintToChat(target_list[i], "2. Your Sandman can fire more baseballs than normal !");
-		PrintToChat(target_list[i], "3. You have more health at the cost of your movement speed.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Sandman can fire more baseballs than normal.");
+		PrintToChat(target_list[i], "3. More health than other Giant Scouts at the cost of movement speed.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

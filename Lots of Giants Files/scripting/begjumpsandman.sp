@@ -177,9 +177,9 @@ public Action:Command_GiantJumpingSandman(client, args)
 		MakeGiantJumpingSandman(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Jumping Sandman Scout !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Jumping Sandman Scout !");
-		PrintToChat(target_list[i], "2. Your Sandman deals 100 percent more damage and can fire more baseballs than normal !");
-		PrintToChat(target_list[i], "3. You also Jump much higher !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Sandman deals more damage and can fire more baseballs than normal.");
+		PrintToChat(target_list[i], "3. You also jump much higher.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

@@ -177,9 +177,8 @@ public Action:Command_GiantBurstFireSol4(client, args)
 		MakeGiantBurstFireSol4(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Burst Fire Soldier (Type 4) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Burst Fire Soldier (Type 4) !");
-		PrintToChat(target_list[i], "2. Your Rocket Launcher can fire a big burst of Rockets !");
-		PrintToChat(target_list[i], "3. GateBot and deals 100 percent more damage than Type 1 !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Type 4 is a GateBot and deals 100 percent more damage.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

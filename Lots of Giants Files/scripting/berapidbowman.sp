@@ -176,8 +176,8 @@ public Action:Command_RapidFireBowman(client, args)
 		MakeRapidFireBowman(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Rapid Fire Bowman !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Rapid Fire Bowman !");
-		PrintToChat(target_list[i], "2. Your Huntsman is crit boosted and charges up the arrow much faster !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Huntsman is crit boosted and charges up the arrow much faster.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

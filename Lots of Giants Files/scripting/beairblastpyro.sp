@@ -196,8 +196,8 @@ public Action:Command_AirBlastPyro(client, args)
 		MakeAirBlastPyro(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Airblast Pyro !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Airblast Pyro !");
-		PrintToChat(target_list[i], "2. You deal no damage but have an insanely strong Airblast !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. You deal no damage with flames but have an insanely strong airblast.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

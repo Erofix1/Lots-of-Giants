@@ -176,8 +176,8 @@ public Action:Command_MajorCrits(client, args)
 		MakeMajorCrits(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Major Crits !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Major Crits !");
-		PrintToChat(target_list[i], "2. Unleash a Barrage of crit boosted Rockets !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Unleash a Barrage of crit boosted Rockets.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

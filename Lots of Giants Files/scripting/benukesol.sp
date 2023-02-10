@@ -177,8 +177,8 @@ public Action:Command_MajorCritsAtomic(client, args)
 		MakeMajorCritsAtomic(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Major Crits Atomic !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Major Crits Atomic !");
-		PrintToChat(target_list[i], "2. Your Black Box deals insane damage and has very big splash radius !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Black Box deals insane damage and has very big splash radius but lower firing speed and reload speed.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

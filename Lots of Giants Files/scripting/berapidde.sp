@@ -175,8 +175,8 @@ public Action:Command_RapidDemo(client, args)
 		MakeRapidDemo(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Rapid Fire Demoman !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Rapid Fire Demoman !");
-		PrintToChat(target_list[i], "2. Your Grenade Launcher can fire endless amount of Pipes !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Grenade Launcher can fire endless amount of Pipes.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

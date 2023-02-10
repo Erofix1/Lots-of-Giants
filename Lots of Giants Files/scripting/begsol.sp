@@ -177,8 +177,8 @@ public Action:Command_GiantSol(client, args)
 		MakeGiantSol(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Soldier !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Soldier !");
-		PrintToChat(target_list[i], "2. Same stats as normal Soldier.");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Normal Rocket Launcher stats.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

@@ -177,8 +177,8 @@ public Action:Command_ChiefTavish(client, args)
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Chief Tavish !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Chief Tavish !");
 		PrintToChat(target_list[i], "2. Full Demoknight.");
-		PrintToChat(target_list[i], "3. Your Eyelander deals 400 percent more damage !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "3. Your Eyelander deals insane amount of damage.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

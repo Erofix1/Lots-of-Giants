@@ -180,8 +180,8 @@ public Action:Command_GiantFlarePyro2(client, args)
 		MakeGiantFlarePyro2(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Flare Pyro (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Flare Pyro (Type 2) !");
-		PrintToChat(target_list[i], "2. Your Scorch Shot fires faster that normal !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Type 2 uses the Scorch Shot instead of the Detonator.");	
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

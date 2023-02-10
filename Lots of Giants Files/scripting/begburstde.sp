@@ -176,8 +176,8 @@ public Action:Command_BurstDemo(client, args)
 		MakeBurstDemo(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Burst Fire Demoman !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Burst Fire Demoman !");
-		PrintToChat(target_list[i], "2. Your Grenade Launcher can fire a big burst of Pipes !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Grenade Launcher can fire a big burst of Pipes.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

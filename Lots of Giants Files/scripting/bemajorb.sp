@@ -177,8 +177,8 @@ public Action:Command_MajorBomber(client, args)
 		MakeMajorBomber(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Major Bomber !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Major Bomber !");
-		PrintToChat(target_list[i], "2. Your Grenade Launcher fires faster and launches fast moving, long range, crit boosted Pipes !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Grenade Launcher fires faster and launches fast moving, long range, crit boosted Pipes.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

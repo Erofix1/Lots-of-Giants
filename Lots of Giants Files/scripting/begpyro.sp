@@ -196,8 +196,8 @@ public Action:Command_GiantPyro(client, args)
 		MakeGiantPyro(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Pyro !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Pyro !");
-		PrintToChat(target_list[i], "2. Same stats as normal Pyro.");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Normal Flamethrower stats.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

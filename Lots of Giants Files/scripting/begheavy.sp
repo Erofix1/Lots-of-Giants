@@ -204,8 +204,8 @@ public Action:Command_GHeavy(client, args)
 		MakeGHeavy(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Heavy !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Heavy !");
-		PrintToChat(target_list[i], "2. Your Minigun deals 50 percent more damage !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Minigun deals more damage.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;
@@ -239,9 +239,9 @@ MakeGHeavy(client)
 	TF2Attrib_SetByName(client, "health from packs decreased", 0.0);
 	TF2Attrib_SetByName(client, "aiming movespeed increased", 2.0);
 	TF2Attrib_SetByName(client, "max health additive bonus", 4700.0);
-	TF2Attrib_SetByName(client, "cannot be backstabbed", 1.0);
 	TF2Attrib_SetByName(client, "ammo regen", 100.0);
 	TF2Attrib_SetByName(client, "cancel falling damage", 1.0);
+	TF2Attrib_SetByName(client, "cannot be backstabbed", 1.0);
 	TF2Attrib_SetByName(client, "patient overheal penalty", 0.0);
 	TF2Attrib_SetByName(client, "mult_patient_overheal_penalty_active", 0.0);
 	TF2Attrib_SetByName(client, "override footstep sound set", 2.0);

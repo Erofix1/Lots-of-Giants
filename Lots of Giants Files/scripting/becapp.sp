@@ -177,8 +177,8 @@ public Action:Command_CaptainPunch(client, args)
 		MakeCaptainPunch(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Captain Punch !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Captain Punch !");
-		PrintToChat(target_list[i], "2. Melee only but you do 400 percent damage and attack 40 percent faster !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Melee only but you do insane amount of damage and punch much faster.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;
@@ -213,8 +213,8 @@ MakeCaptainPunch(client)
 	TF2Attrib_SetByName(client, "airblast vulnerability multiplier", 0.3);
 	TF2Attrib_SetByName(client, "health from packs decreased", 0.0);
 	TF2Attrib_SetByName(client, "max health additive bonus", 59700.0);
-	TF2Attrib_SetByName(client, "cannot be backstabbed", 1.0);
 	TF2Attrib_SetByName(client, "cancel falling damage", 1.0);
+	TF2Attrib_SetByName(client, "cannot be backstabbed", 1.0);
 	TF2Attrib_SetByName(client, "rage giving scale", 0.1);
 	TF2Attrib_SetByName(client, "patient overheal penalty", 0.0);
 	TF2Attrib_SetByName(client, "mult_patient_overheal_penalty_active", 0.0);

@@ -178,9 +178,9 @@ public Action:Command_ChiefConcherorSol(client, args)
 		MakeChiefConcherorSol(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Chief Concheror Soldier !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Chief Concheror Soldier !");
-		PrintToChat(target_list[i], "2. Your Concheror starts with Full RAGE and lasts much longer than normal !");
-		PrintToChat(target_list[i], "3. Chief has more health than Giant Concheror Soldier !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Concheror starts with Full RAGE and lasts much longer than normal.");
+		PrintToChat(target_list[i], "3. Chief Type has more health.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

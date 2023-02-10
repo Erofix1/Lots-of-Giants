@@ -168,9 +168,9 @@ public Action:Command_GiantMedic2(client, args)
 		MakeGiantMedic2(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Medic (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Medic (Type 2) !");
-		PrintToChat(target_list[i], "2. Type 2 has increased passive health regenaration and can fight back !");
+		PrintToChat(target_list[i], "2. Type 2 has increased passive health regenaration and has very weak syringe gun.");
 		PrintToChat(target_list[i], "3. But doesn't spawn with full Ubercharge and builds it very slowly.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;
@@ -205,6 +205,7 @@ MakeGiantMedic2(client)
 	TF2Attrib_SetByName(client, "health from packs decreased", 0.0);
 	TF2Attrib_SetByName(client, "max health additive bonus", 4350.0);
 	TF2Attrib_SetByName(client, "cannot be backstabbed", 1.0);
+	TF2Attrib_SetByName(client, "ammo regen", 100.0);
 	TF2Attrib_SetByName(client, "patient overheal penalty", 0.0);
 	TF2Attrib_SetByName(client, "mult_patient_overheal_penalty_active", 0.0);
 	TF2Attrib_SetByName(client, "cancel falling damage", 1.0);

@@ -177,9 +177,8 @@ public Action:Command_FaNSuperScout(client, args)
 		MakeFaNSuperScout(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Force-a-Nature Super Scout !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Force-a-Nature Super Scout !");
-		PrintToChat(target_list[i], "2. Your Force-a-Nature has insanely strong knockback at close ranges !");
-		PrintToChat(target_list[i], "3. But Reloads slower and does less damage.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Force-a-Nature has much stronger knockback effect but reloads slower and deals less damage.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

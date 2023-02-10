@@ -177,8 +177,8 @@ public Action:Command_GiantDemoKnight(client, args)
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Demoknight !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Demoknight !");
 		PrintToChat(target_list[i], "2. Full Demoknight.");
-		PrintToChat(target_list[i], "3. Your Eyelander gets 3 seconds of crits when you get a kill !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "3. Your Eyelander gets 3 seconds of crits when you get a kill.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

@@ -180,8 +180,8 @@ public Action:Command_GiantFlarePyro(client, args)
 		MakeGiantFlarePyro(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Flare Pyro !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Flare Pyro !");
-		PrintToChat(target_list[i], "2. Your Detonator fires much faster than normal !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Detonator fires much faster than normal.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

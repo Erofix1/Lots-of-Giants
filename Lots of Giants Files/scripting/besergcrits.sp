@@ -178,8 +178,8 @@ public Action:Command_SergeantCrits(client, args)
 		MakeSergeantCrits(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Sergeant Crits !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Sergeant Crits !");
-		PrintToChat(target_list[i], "2. You have a rapid fire Rocket Launcher with increased damage and Crit Boost !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Rocket Launcher has increased damage, fire rate, reload speed, clip size, projectile speed and it's crit boosted.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

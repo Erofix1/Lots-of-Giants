@@ -176,8 +176,8 @@ public Action:Command_GiantDemo(client, args)
 		MakeGiantDemo(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Demoman !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Demoman !");
-		PrintToChat(target_list[i], "2. Same stats as normal Demoman.");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Normal Grenade Launcher stats.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

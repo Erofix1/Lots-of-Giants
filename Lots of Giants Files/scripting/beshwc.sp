@@ -178,8 +178,8 @@ public Action:Command_SuperHeavyweightChamp(client, args)
 		MakeSuperHeavyweightChamp(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Super Heavyweight Champ !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Super Heavyweight Champ !");
-		PrintToChat(target_list[i], "2. Melee only but you attack faster and deal more damage !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Melee only but you attack faster and deal more damage.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

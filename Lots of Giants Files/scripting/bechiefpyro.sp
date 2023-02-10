@@ -198,8 +198,8 @@ public Action:Command_ChiefPyro(client, args)
 		MakeChiefPyro(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Chief Pyro !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Chief Pyro !");
-		PrintToChat(target_list[i], "2. You deal 400 percent more damage and have a stronger Airblast !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Flamethrower deals insane amount of damage and has much stronger airblast.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrades or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

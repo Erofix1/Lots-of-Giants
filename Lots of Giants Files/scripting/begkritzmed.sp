@@ -168,11 +168,10 @@ public Action:Command_GiantKritzkriegMedic(client, args)
 		MakeGiantKritzkriegMedic(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Kritzkrieg Medic !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Kritzkrieg Medic !");
-		PrintToChat(target_list[i], "2. Your Kritzkrieg has Insane Heal Rate !");
-		PrintToChat(target_list[i], "3. Spawns with full Ubercharge !");
-		PrintToChat(target_list[i], "3. Ubercharge last for an extremely long time !");
+		PrintToChat(target_list[i], "2. Your Kritzkrieg has insane Heal Rate.");
+		PrintToChat(target_list[i], "3. Spawns with full Ubercharge and lasts almost forever.");
 		PrintToChat(target_list[i], "4. Can't fight back.");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

@@ -177,7 +177,7 @@ public Action:Command_RapidFireBowman2(client, args)
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Rapid Fire Bowman (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Rapid Fire Bowman (Type 2) !");
 		PrintToChat(target_list[i], "2. Type 2 is not crit boosted.");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

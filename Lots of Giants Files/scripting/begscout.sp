@@ -176,8 +176,8 @@ public Action:Command_GiantScout(client, args)
 		MakeGiantScout(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Scout !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Scout !");
-		PrintToChat(target_list[i], "2. Same stats as normal Scout.");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Normal Scattergun stats.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

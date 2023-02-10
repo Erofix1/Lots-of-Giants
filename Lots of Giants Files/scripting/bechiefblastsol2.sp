@@ -177,9 +177,9 @@ public Action:Command_ChiefBlastSol2(client, args)
 		MakeChiefBlastSol2(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Chief Blast Soldier (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Chief Blast Soldier (Type 2) !");
-		PrintToChat(target_list[i], "2. Your Rockets launch your enemies into the air !");
-		PrintToChat(target_list[i], "3. More health than Type 1 !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Rockets launch enemies into the air.");
+		PrintToChat(target_list[i], "3. More health than Type 1.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

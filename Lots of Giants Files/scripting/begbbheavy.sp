@@ -204,9 +204,8 @@ public Action:Command_GBrassBeastHeavy(client, args)
 		MakeGBrassBeastHeavy(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Brass Beast Heavy !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Brass Beast Heavy !");
-		PrintToChat(target_list[i], "2. Your Brass Beast deals 70 percent more damage !");
-		PrintToChat(target_list[i], "3. But you move slower when Spun-Up.");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Brass Beast deals more damage than normal Giant Heavy but you move slower when Spun-Up.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

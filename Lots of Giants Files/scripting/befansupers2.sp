@@ -177,10 +177,8 @@ public Action:Command_FaNSuperScout2(client, args)
 		MakeFaNSuperScout2(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Force-a-Nature Super Scout (Type 2) !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Force-a-Nature Super Scout (Type 2) !");
-		PrintToChat(target_list[i], "2. Your Force-a-Nature has a stronger knockback at close range !");
-		PrintToChat(target_list[i], "3. But Reloads slower and does less damage.");
-		PrintToChat(target_list[i], "4. Type 2 is a GateBot but has reduced movement speed and knockback power.");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Type 2 is a GateBot but has reduced movement speed and knockback bonus.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

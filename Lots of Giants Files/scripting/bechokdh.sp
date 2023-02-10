@@ -205,9 +205,9 @@ public Action:Command_Chokdh(client, args)
 		MakeChokdh(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Chief Heal-on-Kill Deflector Heavy !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Chief Heal-on-Kill Deflector Heavy !");
-		PrintToChat(target_list[i], "2. Your Minigun deals 20 percent more damage and can destroy ememy Rockets and Pipes !");
-		PrintToChat(target_list[i], "3. Killing enemies restores 8000 health !");
-		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "2. Your Minigun deals 20 percent more damage and can destroy ememy Rockets and Pipes.");
+		PrintToChat(target_list[i], "3. Killing enemies restores 8000 health.");
+		PrintToChat(target_list[i], "4. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

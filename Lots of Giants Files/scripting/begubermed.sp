@@ -168,10 +168,10 @@ public Action:Command_GiantUberMedic(client, args)
 		MakeGiantUberMedic(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Uber Medic !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Medic !");
-		PrintToChat(target_list[i], "2. Your Medigun has Insane Heal Rate !");
-		PrintToChat(target_list[i], "3. Spawns with full Ubercharge !");
+		PrintToChat(target_list[i], "2. Your Medigun has insane Heal Rate.");
+		PrintToChat(target_list[i], "3. Spawns with full Ubercharge.");
 		PrintToChat(target_list[i], "4. Can't fight back.");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");	
+		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, buy any MvM upgrade or die.");	
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

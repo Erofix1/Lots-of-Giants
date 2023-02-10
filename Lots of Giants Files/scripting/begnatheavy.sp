@@ -204,8 +204,8 @@ public Action:Command_GiantNataschaHeavy(client, args)
 		MakeGiantNataschaHeavy(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Natascha Heavy !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Natascha Heavy !");
-		PrintToChat(target_list[i], "2. Your Natascha slows enemies and deals 25 percent more damage !");
-		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Natascha deals more damage.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;

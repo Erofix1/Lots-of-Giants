@@ -177,10 +177,8 @@ public Action:Command_GiantTomislavHeavy(client, args)
 		MakeGiantTomislavHeavy(target_list[i]);
 		LogAction(client, target_list[i], "\"%L\" turned \"%L\" into Giant Tomislav Heavy !", client, target_list[i]);
 		PrintToChat(target_list[i], "1. You are now Giant Tomislav Heavy !");
-		PrintToChat(target_list[i], "2. Your Tomislav deals 20 percent more damage !");
-		PrintToChat(target_list[i], "3. Is 50 percent more accurate !");
-		PrintToChat(target_list[i], "4. And is completely silent !");
-		PrintToChat(target_list[i], "5. You will lose this status when you touch a locker, upgrade or die.");
+		PrintToChat(target_list[i], "2. Your Tomislav deals more damage, is more accurate and is completely silent.");
+		PrintToChat(target_list[i], "3. You will lose this status when you touch a locker, buy any MvM upgrade or die.");
 	}
 	EmitSoundToAll(SPAWN);
 	return Plugin_Handled;
