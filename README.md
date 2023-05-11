@@ -1,4 +1,4 @@
-# Lots-of-Giants
+# Lots-of-Giants (REQUIRES TF2Attributes PLUGIN)
 - Lots of Giants has every Giant Robot Valve made (even the unused ones) playable. 
 - I also added custom Giants that I made up. 
 - Some changes were made for QoL stuff or to compansate for a needed change (more info in other files). 
